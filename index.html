@@ -51,11 +51,21 @@
               (AB '23)
             </h5>
             <h3 class="pt-5">The Hippocampus</h3>
+            <div class="bg-light rounded px-4 py-2 my-3 text-dark">
+              Links provide additional context; simply click on them to reveal a popup! <a href="!" data-toggle="modal"
+                data-target="#modalExample">
+                Click here
+              </a> to try it!
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-8">
-            <p>The hippocampus is a seahorse-shaped structure in the body’s limbic system associated with emotions,
+            <p>The hippocampus is a seahorse-shaped structure in the body’s
+              <a href="!" data-toggle="modal" data-target="#modalLimbicSystem">
+                limbic system
+              </a>
+              associated with emotions,
               desires,
               and memories; rather than dealing with psychodynamic theories, the hippocampus is the brain’s storage
               center
@@ -64,7 +74,8 @@
               effects on the human body, but certain drugs — including cannabis or marjuana — have not been deemed as
               particularly harmful. With cannabis legalization becoming more widespread in the United States as a pain
               reliever, scientists have explored the structure of compounds inside marijuana that provide relief and
-              potentially other undesirable effects on the hippocampus.[2]</p>
+              potentially other undesirable effects on the hippocampus.[2]
+            </p>
           </div>
           <div class="col-4">
             <img class="rounded mx-auto d-block" style="width: 100%" src="
@@ -296,6 +307,56 @@
     </div>
   </section>
 
+  <!-- Modals -->
+  <!-- Limbic System -->
+  <div class="modal fade" id="modalLimbicSystem" tabindex="-1" role="dialog" aria-labelledby="modalLimbicSystem"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLimbicSystem">The Limbic System</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Associated with emotions, memory, and motivation. It is the oldest part of the brain and is located in
+            between
+            the cerebral hemispheres and the brain stem. It is made up of the amygdala, hippocampus, and hypothalamus.
+          </p>
+        </div>
+        <div class="modal-footer"><small>
+            Myers, D. G. (2018). Myers' psychology for the Ap course. Bedford,
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freeman &amp; Worth High School
+            Publishers.</small>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Example -->
+  <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExample"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExample">Example popup!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Nice! Thanks for opening this popup; it's a great way to show more information about a topic. Throughout the
+          article, please click on blue links to open popups with more information about the topic :)
+          <br><br>
+          Now, just click on the close button or on the background to close this popup.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script type="module" src="assets/js/starter.js"></script>
